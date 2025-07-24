@@ -1,0 +1,164 @@
+{
+  "common": {
+    "loading": "Cargando...",
+    "error": "Error",
+    "success": "Éxito",
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "create": "Crear",
+    "update": "Actualizar",
+    "search": "Buscar",
+    "filter": "Filtrar",
+    "back": "Atrás",
+    "next": "Siguiente",
+    "previous": "Anterior",
+    "submit": "Enviar",
+    "confirm": "Confirmar",
+    "yes": "Sí",
+    "no": "No"
+  },
+  "auth": {
+    "signIn": "Iniciar Sesión",
+    "signUp": "Registrarse",
+    "signOut": "Cerrar Sesión",
+    "email": "Correo Electrónico",
+    "password": "Contraseña",
+    "confirmPassword": "Confirmar Contraseña",
+    "forgotPassword": "¿Olvidaste tu contraseña?",
+    "dontHaveAccount": "¿No tienes una cuenta?",
+    "alreadyHaveAccount": "¿Ya tienes una cuenta?",
+    "signingIn": "Iniciando Sesión...",
+    "creatingAccount": "Creando Cuenta...",
+    "welcomeTitle": "Task Runner",
+    "welcomeSubtitle": "Inicia sesión en tu cuenta",
+    "createAccountSubtitle": "Crea tu cuenta",
+    "roleSelection": "Soy un:",
+    "roles": {
+      "client": "Cliente",
+      "merchant": "Proveedor de Servicios",
+      "driver": "Conductor de Entrega",
+      "admin": "Administrador"
+    },
+    "roleDescriptions": {
+      "client": "Necesito servicios",
+      "merchant": "Ofrezco servicios",
+      "driver": "Entrego pedidos",
+      "admin": "Gestiono la plataforma"
+    },
+    "errors": {
+      "fillAllFields": "Por favor completa todos los campos",
+      "passwordMismatch": "Las contraseñas no coinciden",
+      "passwordTooShort": "La contraseña debe tener al menos 6 caracteres",
+      "invalidEmail": "Por favor ingresa un correo electrónico válido"
+    },
+    "success": {
+      "accountCreated": "¡Cuenta creada exitosamente! Por favor revisa tu correo para verificar tu cuenta."
+    }
+  },
+  "navigation": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "messages": "Mensajes",
+    "requests": "Solicitudes",
+    "deliveries": "Entregas",
+    "payments": "Pagos",
+    "admin": "Admin",
+    "profile": "Perfil"
+  },
+  "dashboard": {
+    "welcome": "Bienvenido a Task Runner",
+    "hello": "¡Hola, {{username}}!",
+    "yourRole": "Tu Rol",
+    "quickActions": "Acciones Rápidas",
+    "featuredServices": "Servicios Destacados",
+    "stats": {
+      "requests": "Solicitudes",
+      "services": "Servicios",
+      "deliveries": "Entregas",
+      "rating": "Calificación",
+      "messages": "Mensajes"
+    },
+    "roleDescriptions": {
+      "client": "Navega y reserva servicios de proveedores",
+      "merchant": "Gestiona tus servicios y maneja solicitudes de clientes",
+      "driver": "Acepta y completa solicitudes de entrega",
+      "admin": "Gestiona usuarios de la plataforma y monitorea el sistema"
+    }
+  },
+  "services": {
+    "title": "Servicios",
+    "searchPlaceholder": "Buscar servicios...",
+    "createService": "Crear Servicio",
+    "serviceDetails": "Detalles del Servicio",
+    "bookService": "Reservar Servicio",
+    "contactMerchant": "Mensaje",
+    "serviceProvider": "Proveedor de Servicios",
+    "duration": "{{minutes}} minutos",
+    "priceTypes": {
+      "fixed": "Fijo",
+      "hourly": "Por Hora",
+      "per_item": "Por Artículo"
+    },
+    "create": {
+      "title": "Crear Servicio",
+      "serviceTitle": "Título del Servicio",
+      "description": "Descripción",
+      "category": "Categoría",
+      "price": "Precio",
+      "priceType": "Tipo de Precio",
+      "serviceArea": "Área de Servicio",
+      "duration": "Duración (minutos)",
+      "images": "Imágenes del Servicio",
+      "addPhoto": "Agregar Foto",
+      "creating": "Creando...",
+      "success": "¡Servicio creado exitosamente!"
+    },
+    "errors": {
+      "fillRequired": "Por favor completa todos los campos requeridos",
+      "loadFailed": "Error al cargar los detalles del servicio",
+      "createFailed": "Error al crear el servicio",
+      "bookFailed": "Error al reservar el servicio"
+    },
+    "empty": {
+      "noServices": "No hay servicios disponibles",
+      "noServicesFound": "No se encontraron servicios"
+    }
+  },
+  "profile": {
+    "title": "Perfil",
+    "accountInfo": "Información de la Cuenta",
+    "username": "Nombre de Usuario",
+    "fullName": "Nombre Completo",
+    "phone": "Teléfono",
+    "email": "Correo Electrónico",
+    "memberSince": "Miembro Desde",
+    "role": "Rol",
+    "updateProfile": "Actualizar Perfil",
+    "updating": "Actualizando...",
+    "changeAvatar": "Cambiar",
+    "uploading": "Subiendo...",
+    "placeholders": {
+      "username": "Ingresa nombre de usuario",
+      "fullName": "Ingresa nombre completo",
+      "phone": "Ingresa número de teléfono"
+    },
+    "success": {
+      "profileUpdated": "Perfil actualizado exitosamente",
+      "avatarUpdated": "Avatar actualizado exitosamente"
+    },
+    "errors": {
+      "updateFailed": "Error al actualizar el perfil",
+      "uploadFailed": "Error al subir el avatar",
+      "permissionNeeded": "Por favor otorga permisos de galería para subir un avatar."
+    }
+  },
+  "errors": {
+    "generic": "Algo salió mal. Por favor intenta de nuevo.",
+    "network": "Error de red. Por favor verifica tu conexión.",
+    "unauthorized": "No estás autorizado para realizar esta acción.",
+    "notFound": "El recurso solicitado no fue encontrado.",
+    "validation": "Por favor verifica tu entrada e intenta de nuevo."
+  }
+}

@@ -1,0 +1,273 @@
+{
+  "common": {
+    "loading": "Chargement...",
+    "error": "Erreur",
+    "success": "Succès",
+    "cancel": "Annuler",
+    "save": "Enregistrer",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "create": "Créer",
+    "update": "Mettre à jour",
+    "search": "Rechercher",
+    "filter": "Filtrer",
+    "back": "Retour",
+    "next": "Suivant",
+    "previous": "Précédent",
+    "submit": "Soumettre",
+    "confirm": "Confirmer",
+    "yes": "Oui",
+    "no": "Non"
+  },
+  "auth": {
+    "signIn": "Se connecter",
+    "signUp": "S'inscrire",
+    "signOut": "Se déconnecter",
+    "email": "Courriel",
+    "password": "Mot de passe",
+    "confirmPassword": "Confirmer le mot de passe",
+    "forgotPassword": "Mot de passe oublié?",
+    "dontHaveAccount": "Vous n'avez pas de compte?",
+    "alreadyHaveAccount": "Vous avez déjà un compte?",
+    "signingIn": "Connexion...",
+    "creatingAccount": "Création du compte...",
+    "welcomeTitle": "Task Runner",
+    "welcomeSubtitle": "Connectez-vous à votre compte",
+    "createAccountSubtitle": "Créez votre compte",
+    "roleSelection": "Je suis un:",
+    "roles": {
+      "client": "Client",
+      "merchant": "Fournisseur de services",
+      "driver": "Livreur",
+      "admin": "Administrateur"
+    },
+    "roleDescriptions": {
+      "client": "J'ai besoin de services",
+      "merchant": "J'offre des services",
+      "driver": "Je livre des commandes",
+      "admin": "Je gère la plateforme"
+    },
+    "errors": {
+      "fillAllFields": "Veuillez remplir tous les champs",
+      "passwordMismatch": "Les mots de passe ne correspondent pas",
+      "passwordTooShort": "Le mot de passe doit contenir au moins 6 caractères",
+      "invalidEmail": "Veuillez entrer une adresse courriel valide"
+    },
+    "success": {
+      "accountCreated": "Compte créé avec succès! Veuillez vérifier votre courriel pour confirmer votre compte."
+    }
+  },
+  "navigation": {
+    "home": "Accueil",
+    "services": "Services",
+    "messages": "Messages",
+    "requests": "Demandes",
+    "deliveries": "Livraisons",
+    "payments": "Paiements",
+    "admin": "Admin",
+    "profile": "Profil"
+  },
+  "dashboard": {
+    "welcome": "Bienvenue sur Task Runner",
+    "hello": "Bonjour, {{username}}!",
+    "yourRole": "Votre rôle",
+    "quickActions": "Actions rapides",
+    "featuredServices": "Services en vedette",
+    "stats": {
+      "requests": "Demandes",
+      "services": "Services",
+      "deliveries": "Livraisons",
+      "rating": "Note",
+      "messages": "Messages"
+    },
+    "roleDescriptions": {
+      "client": "Parcourez et réservez des services auprès de fournisseurs",
+      "merchant": "Gérez vos services et traitez les demandes des clients",
+      "driver": "Acceptez et complétez les demandes de livraison",
+      "admin": "Gérez les utilisateurs de la plateforme et surveillez le système"
+    }
+  },
+  "services": {
+    "title": "Services",
+    "searchPlaceholder": "Rechercher des services...",
+    "createService": "Créer un service",
+    "serviceDetails": "Détails du service",
+    "bookService": "Réserver le service",
+    "contactMerchant": "Message",
+    "serviceProvider": "Fournisseur de services",
+    "duration": "{{minutes}} minutes",
+    "priceTypes": {
+      "fixed": "Fixe",
+      "hourly": "Par heure",
+      "per_item": "Par article"
+    },
+    "create": {
+      "title": "Créer un service",
+      "serviceTitle": "Titre du service",
+      "description": "Description",
+      "category": "Catégorie",
+      "price": "Prix",
+      "priceType": "Type de prix",
+      "serviceArea": "Zone de service",
+      "duration": "Durée (minutes)",
+      "images": "Images du service",
+      "addPhoto": "Ajouter une photo",
+      "creating": "Création...",
+      "success": "Service créé avec succès!"
+    },
+    "errors": {
+      "fillRequired": "Veuillez remplir tous les champs obligatoires",
+      "loadFailed": "Échec du chargement des détails du service",
+      "createFailed": "Échec de la création du service",
+      "bookFailed": "Échec de la réservation du service"
+    },
+    "empty": {
+      "noServices": "Aucun service disponible",
+      "noServicesFound": "Aucun service trouvé"
+    }
+  },
+  "messages": {
+    "title": "Messages",
+    "typeMessage": "Tapez un message...",
+    "noConversations": "Aucune conversation pour le moment",
+    "startBrowsing": "Commencez à parcourir les services pour vous connecter avec les fournisseurs",
+    "noMessages": "Aucun message pour le moment",
+    "you": "Vous: ",
+    "errors": {
+      "loadFailed": "Échec du chargement des messages",
+      "sendFailed": "Échec de l'envoi du message",
+      "conversationFailed": "Échec du démarrage de la conversation"
+    }
+  },
+  "requests": {
+    "title": "Demandes de service",
+    "myRequests": "Mes demandes",
+    "filters": {
+      "all": "Toutes",
+      "pending": "En attente",
+      "accepted": "Acceptées",
+      "completed": "Terminées"
+    },
+    "status": {
+      "pending": "En attente",
+      "accepted": "Acceptée",
+      "in_progress": "En cours",
+      "completed": "Terminée",
+      "cancelled": "Annulée"
+    },
+    "actions": {
+      "accept": "Accepter",
+      "decline": "Refuser"
+    },
+    "empty": {
+      "noRequests": "Aucune demande trouvée",
+      "clientEmpty": "Parcourez les services pour faire votre première demande",
+      "merchantEmpty": "Les demandes apparaîtront ici lorsque les clients réserveront vos services"
+    }
+  },
+  "deliveries": {
+    "title": "Livraisons",
+    "online": "En ligne",
+    "offline": "Hors ligne",
+    "pickup": "Ramassage",
+    "delivery": "Livraison",
+    "accept": "Accepter",
+    "markPickedUp": "Marquer comme ramassé",
+    "inTransit": "En transit",
+    "markDelivered": "Marquer comme livré",
+    "status": {
+      "pending": "En attente",
+      "assigned": "Assignée",
+      "picked_up": "Ramassée",
+      "in_transit": "En transit",
+      "delivered": "Livrée",
+      "cancelled": "Annulée"
+    },
+    "empty": {
+      "noDeliveries": "Aucune livraison disponible",
+      "onlineMessage": "Les nouvelles demandes de livraison apparaîtront ici",
+      "offlineMessage": "Activez la disponibilité pour recevoir des demandes de livraison"
+    },
+    "errors": {
+      "locationPermission": "L'autorisation de localisation est requise pour être en ligne",
+      "acceptFailed": "Échec de l'acceptation de la livraison",
+      "updateFailed": "Échec de la mise à jour du statut de livraison"
+    }
+  },
+  "payments": {
+    "title": "Paiements et facturation",
+    "paymentMethods": "Méthodes de paiement",
+    "transactionHistory": "Historique des transactions",
+    "addCard": "Ajouter une carte",
+    "setDefault": "Définir par défaut",
+    "default": "Par défaut",
+    "remove": "Supprimer",
+    "noPaymentMethods": "Aucune méthode de paiement",
+    "addPaymentMethodPrompt": "Ajoutez une méthode de paiement pour commencer à effectuer des paiements",
+    "noTransactions": "Aucune transaction",
+    "transactionHistoryPrompt": "Votre historique de transactions apparaîtra ici",
+    "removePaymentMethod": "Supprimer la méthode de paiement",
+    "removeConfirmation": "Êtes-vous sûr de vouloir supprimer cette méthode de paiement?",
+    "types": {
+      "payment": "Paiement",
+      "refund": "Remboursement",
+      "payout": "Versement",
+      "fee": "Frais"
+    },
+    "status": {
+      "pending": "En attente",
+      "processing": "En cours de traitement",
+      "completed": "Terminé",
+      "failed": "Échoué",
+      "cancelled": "Annulé"
+    }
+  },
+  "admin": {
+    "title": "Tableau de bord administrateur",
+    "subtitle": "Gestion de la plateforme Task Runner",
+    "platformOverview": "Aperçu de la plateforme",
+    "managementTools": "Outils de gestion",
+    "alerts": "Alertes",
+    "stats": {
+      "totalUsers": "Total des utilisateurs",
+      "activeServices": "Services actifs",
+      "serviceRequests": "Demandes de service",
+      "activeDrivers": "Chauffeurs actifs"
+    }
+  },
+  "profile": {
+    "title": "Profil",
+    "accountInfo": "Informations du compte",
+    "username": "Nom d'utilisateur",
+    "fullName": "Nom complet",
+    "phone": "Téléphone",
+    "email": "Courriel",
+    "memberSince": "Membre depuis",
+    "role": "Rôle",
+    "updateProfile": "Mettre à jour le profil",
+    "updating": "Mise à jour...",
+    "changeAvatar": "Changer",
+    "uploading": "Téléchargement...",
+    "placeholders": {
+      "username": "Entrez le nom d'utilisateur",
+      "fullName": "Entrez le nom complet",
+      "phone": "Entrez le numéro de téléphone"
+    },
+    "success": {
+      "profileUpdated": "Profil mis à jour avec succès",
+      "avatarUpdated": "Avatar mis à jour avec succès"
+    },
+    "errors": {
+      "updateFailed": "Échec de la mise à jour du profil",
+      "uploadFailed": "Échec du téléchargement de l'avatar",
+      "permissionNeeded": "Veuillez accorder les autorisations de pellicule photo pour télécharger un avatar."
+    }
+  },
+  "errors": {
+    "generic": "Quelque chose s'est mal passé. Veuillez réessayer.",
+    "network": "Erreur réseau. Veuillez vérifier votre connexion.",
+    "unauthorized": "Vous n'êtes pas autorisé à effectuer cette action.",
+    "notFound": "La ressource demandée n'a pas été trouvée.",
+    "validation": "Veuillez vérifier votre saisie et réessayer."
+  }
+}

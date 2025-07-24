@@ -1,0 +1,372 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "create": "Create",
+    "update": "Update",
+    "search": "Search",
+    "filter": "Filter",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "submit": "Submit",
+    "confirm": "Confirm",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "auth": {
+    "signIn": "Sign In",
+    "signUp": "Sign Up",
+    "signOut": "Sign Out",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "forgotPassword": "Forgot Password?",
+    "dontHaveAccount": "Don't have an account?",
+    "alreadyHaveAccount": "Already have an account?",
+    "signingIn": "Signing In...",
+    "creatingAccount": "Creating Account...",
+    "welcomeTitle": "Task Runner",
+    "welcomeSubtitle": "Sign in to your account",
+    "createAccountSubtitle": "Create your account",
+    "roleSelection": "I am a:",
+    "roles": {
+      "client": "Client",
+      "merchant": "Service Provider", 
+      "driver": "Delivery Driver",
+      "admin": "Administrator"
+    },
+    "roleDescriptions": {
+      "client": "I need services",
+      "merchant": "I offer services",
+      "driver": "I deliver orders",
+      "admin": "I manage the platform"
+    },
+    "errors": {
+      "fillAllFields": "Please fill in all fields",
+      "passwordMismatch": "Passwords do not match",
+      "passwordTooShort": "Password must be at least 6 characters",
+      "invalidEmail": "Please enter a valid email address"
+    },
+    "success": {
+      "accountCreated": "Account created successfully! Please check your email to verify your account."
+    }
+  },
+  "navigation": {
+    "home": "Home",
+    "services": "Services",
+    "messages": "Messages",
+    "requests": "Requests",
+    "deliveries": "Deliveries",
+    "payments": "Payments",
+    "admin": "Admin",
+    "profile": "Profile"
+  },
+  "dashboard": {
+    "welcome": "Welcome to Task Runner",
+    "hello": "Hello, {{username}}!",
+    "yourRole": "Your Role",
+    "quickActions": "Quick Actions",
+    "featuredServices": "Featured Services",
+    "stats": {
+      "requests": "Requests",
+      "services": "Services", 
+      "deliveries": "Deliveries",
+      "rating": "Rating",
+      "messages": "Messages"
+    },
+    "roleDescriptions": {
+      "client": "Browse and book services from providers",
+      "merchant": "Manage your services and handle client requests",
+      "driver": "Accept and complete delivery requests",
+      "admin": "Manage platform users and monitor system"
+    }
+  },
+  "services": {
+    "title": "Services",
+    "searchPlaceholder": "Search services...",
+    "createService": "Create Service",
+    "serviceDetails": "Service Details",
+    "bookService": "Book Service",
+    "contactMerchant": "Message",
+    "serviceProvider": "Service Provider",
+    "duration": "{{minutes}} minutes",
+    "priceTypes": {
+      "fixed": "Fixed",
+      "hourly": "Per Hour",
+      "per_item": "Per Item"
+    },
+    "create": {
+      "title": "Create Service",
+      "serviceTitle": "Service Title",
+      "description": "Description",
+      "category": "Category",
+      "price": "Price",
+      "priceType": "Price Type",
+      "serviceArea": "Service Area",
+      "duration": "Duration (minutes)",
+      "images": "Service Images",
+      "addPhoto": "Add Photo",
+      "creating": "Creating...",
+      "success": "Service created successfully!"
+    },
+    "errors": {
+      "fillRequired": "Please fill in all required fields",
+      "loadFailed": "Failed to load service details",
+      "createFailed": "Failed to create service",
+      "bookFailed": "Failed to book service"
+    },
+    "empty": {
+      "noServices": "No services available",
+      "noServicesFound": "No services found"
+    }
+  },
+  "messages": {
+    "title": "Messages",
+    "typeMessage": "Type a message...",
+    "noConversations": "No conversations yet",
+    "startBrowsing": "Start browsing services to connect with providers",
+    "noMessages": "No messages yet",
+    "you": "You: ",
+    "errors": {
+      "loadFailed": "Failed to load messages",
+      "sendFailed": "Failed to send message",
+      "conversationFailed": "Failed to start conversation"
+    }
+  },
+  "requests": {
+    "title": "Service Requests",
+    "myRequests": "My Requests",
+    "filters": {
+      "all": "All",
+      "pending": "Pending", 
+      "accepted": "Accepted",
+      "completed": "Completed"
+    },
+    "status": {
+      "pending": "Pending",
+      "accepted": "Accepted",
+      "in_progress": "In Progress",
+      "completed": "Completed",
+      "cancelled": "Cancelled"
+    },
+    "actions": {
+      "accept": "Accept",
+      "decline": "Decline"
+    },
+    "empty": {
+      "noRequests": "No requests found",
+      "clientEmpty": "Browse services to make your first request",
+      "merchantEmpty": "Requests will appear here when clients book your services"
+    }
+  },
+  "deliveries": {
+    "title": "Deliveries",
+    "online": "Online",
+    "offline": "Offline",
+    "pickup": "Pickup",
+    "delivery": "Delivery",
+    "accept": "Accept",
+    "markPickedUp": "Mark Picked Up",
+    "inTransit": "In Transit",
+    "markDelivered": "Mark Delivered",
+    "status": {
+      "pending": "Pending",
+      "assigned": "Assigned",
+      "picked_up": "Picked Up",
+      "in_transit": "In Transit",
+      "delivered": "Delivered",
+      "cancelled": "Cancelled"
+    },
+    "empty": {
+      "noDeliveries": "No deliveries available",
+      "onlineMessage": "New delivery requests will appear here",
+      "offlineMessage": "Turn on availability to receive delivery requests"
+    },
+    "errors": {
+      "locationPermission": "Location permission is required to go online",
+      "acceptFailed": "Failed to accept delivery",
+      "updateFailed": "Failed to update delivery status"
+    }
+  },
+  "payments": {
+    "title": "Payments & Billing",
+    "paymentMethods": "Payment Methods",
+    "transactionHistory": "Transaction History",
+    "addCard": "Add Card",
+    "setDefault": "Set Default",
+    "default": "Default",
+    "remove": "Remove",
+    "noPaymentMethods": "No payment methods",
+    "addPaymentMethodPrompt": "Add a payment method to start making payments",
+    "noTransactions": "No transactions",
+    "transactionHistoryPrompt": "Your transaction history will appear here",
+    "removePaymentMethod": "Remove Payment Method",
+    "removeConfirmation": "Are you sure you want to remove this payment method?",
+    "types": {
+      "payment": "Payment",
+      "refund": "Refund",
+      "payout": "Payout",
+      "fee": "Fee"
+    },
+    "status": {
+      "pending": "Pending",
+      "processing": "Processing",
+      "completed": "Completed",
+      "failed": "Failed",
+      "cancelled": "Cancelled"
+    }
+  },
+  "admin": {
+    "title": "Admin Dashboard",
+    "subtitle": "Task Runner Platform Management",
+    "platformOverview": "Platform Overview",
+    "managementTools": "Management Tools",
+    "alerts": "Alerts",
+    "stats": {
+      "totalUsers": "Total Users",
+      "activeServices": "Active Services",
+      "serviceRequests": "Service Requests",
+      "activeDrivers": "Active Drivers"
+    },
+    "tools": {
+      "userManagement": {
+        "title": "User Management",
+        "description": "Manage users, roles, and permissions"
+      },
+      "serviceManagement": {
+        "title": "Service Management", 
+        "description": "Review and moderate services"
+      },
+      "contentModeration": {
+        "title": "Content Moderation",
+        "description": "Review flagged content and reports"
+      },
+      "analytics": {
+        "title": "Analytics & Reports",
+        "description": "View platform analytics and generate reports"
+      },
+      "financial": {
+        "title": "Financial Management",
+        "description": "Manage payments, payouts, and fees"
+      },
+      "support": {
+        "title": "Support Tickets",
+        "description": "Handle customer support requests"
+      },
+      "settings": {
+        "title": "System Settings",
+        "description": "Configure platform settings"
+      },
+      "reviews": {
+        "title": "Reviews Management",
+        "description": "Moderate reviews and ratings"
+      }
+    },
+    "users": {
+      "title": "User Management",
+      "searchPlaceholder": "Search users...",
+      "filters": {
+        "allUsers": "All Users",
+        "clients": "Clients",
+        "merchants": "Merchants", 
+        "drivers": "Drivers",
+        "admins": "Admins"
+      },
+      "actions": {
+        "role": "Role",
+        "suspend": "Suspend",
+        "activate": "Activate"
+      },
+      "changeRole": "Change Role",
+      "selectNewRole": "Select new role for this user",
+      "joined": "Joined {{date}}",
+      "empty": {
+        "noUsers": "No users found",
+        "adjustSearch": "Try adjusting your search criteria",
+        "noMatches": "No users match the selected filters"
+      }
+    },
+    "analytics": {
+      "title": "Analytics & Reports",
+      "periods": {
+        "week": "Week",
+        "month": "Month", 
+        "year": "Year"
+      },
+      "userGrowth": "User Growth",
+      "servicePerformance": "Service Categories Performance",
+      "topServices": "Top Performing Services",
+      "quickActions": "Quick Actions",
+      "exportAnalytics": "Export Analytics Report",
+      "generateFinancial": "Generate Financial Report",
+      "chartPlaceholder": "User growth chart would be rendered here",
+      "totalNewUsers": "Total new users this {{period}}: {{count}}",
+      "servicesCount": "{{count}} services",
+      "bookingsRevenue": "{{bookings}} bookings • ${{revenue}} revenue"
+    }
+  },
+  "profile": {
+    "title": "Profile",
+    "accountInfo": "Account Information",
+    "username": "Username",
+    "fullName": "Full Name",
+    "phone": "Phone",
+    "email": "Email",
+    "memberSince": "Member Since",
+    "role": "Role",
+    "updateProfile": "Update Profile",
+    "updating": "Updating...",
+    "changeAvatar": "Change",
+    "uploading": "Uploading...",
+    "placeholders": {
+      "username": "Enter username",
+      "fullName": "Enter full name",
+      "phone": "Enter phone number"
+    },
+    "success": {
+      "profileUpdated": "Profile updated successfully",
+      "avatarUpdated": "Avatar updated successfully"
+    },
+    "errors": {
+      "updateFailed": "Failed to update profile",
+      "uploadFailed": "Failed to upload avatar",
+      "permissionNeeded": "Please grant camera roll permissions to upload an avatar."
+    }
+  },
+  "reviews": {
+    "helpful": "Helpful",
+    "notHelpful": "Not Helpful",
+    "flag": "Flag",
+    "respond": "Respond",
+    "merchantResponse": "Merchant Response:",
+    "yourResponse": "Your Response:",
+    "writeResponse": "Tap to write a response...",
+    "flagReview": "Flag Review",
+    "flagReasons": {
+      "inappropriate": "Inappropriate content",
+      "spam": "Spam",
+      "fake": "Fake review",
+      "offensive": "Offensive language"
+    },
+    "flagSuccess": "Review has been flagged for moderation",
+    "responseSuccess": "Response submitted successfully",
+    "errors": {
+      "voteFailed": "Failed to submit vote",
+      "flagFailed": "Failed to flag review",
+      "responseFailed": "Failed to submit response"
+    }
+  },
+  "errors": {
+    "generic": "Something went wrong. Please try again.",
+    "network": "Network error. Please check your connection.",
+    "unauthorized": "You are not authorized to perform this action.",
+    "notFound": "The requested resource was not found.",
+    "validation": "Please check your input and try again."
+  }
+}
