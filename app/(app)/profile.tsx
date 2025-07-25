@@ -62,12 +62,37 @@ export default function Profile() {
   const uploadAvatar = async (uri: string) => {
     if (!user) return;
 
+    // Add memory safety checks
+    const MAX_AVATAR_SIZE = 5 * 1024 * 1024; // 5MB limit for avatars
+    
     setUploading(true);
     
     try {
       const response = await fetch(uri);
+      
+      // Check content length before processing
+      const contentLength = response.headers.get('content-length');
+      if (contentLength && parseInt(contentLength) > MAX_AVATAR_SIZE) {
+        throw new Error('Avatar too large. Maximum size is 5MB.');
+      }
+      
       const blob = await response.blob();
+      
+      // Additional size check after blob creation
+      if (blob.size > MAX_AVATAR_SIZE) {
+        throw new Error('Avatar too large. Maximum size is 5MB.');
+      }
+      
       const arrayBuffer = await blob.arrayBuffer();
+      
+      // Validate array buffer
+      if (arrayBuffer.byteLength === 0) {
+        throw new Error('Invalid file: empty content');
+      }
+      
+      if (arrayBuffer.byteLength > MAX_AVATAR_SIZE) {
+        throw new Error('Avatar too large after processing');
+      }
       
       const fileExt = uri.split('.').pop()?.toLowerCase() ?? 'jpeg';
       const fileName = `${user.id}-${Date.now()}.${fileExt}`;
@@ -99,9 +124,13 @@ export default function Profile() {
       Alert.alert(t('common.success'), t('profile.success.avatarUpdated'));
     } catch (error) {
       console.error('Error uploading avatar:', error);
-      Alert.alert(t('common.error'), t('profile.errors.uploadFailed'));
+      Alert.alert(t('common.error'), error instanceof Error ? error.message : t('profile.errors.uploadFailed'));
     } finally {
       setUploading(false);
+      // Force garbage collection hint
+      if (global.gc) {
+        global.gc();
+      }
     }
   };
 

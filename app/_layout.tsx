@@ -2,9 +2,8 @@ import { Stack } from 'expo-router';
 import { AuthProvider } from '../src/contexts/AuthContext';
 import { LanguageProvider } from '../src/contexts/LanguageContext';
 import ErrorBoundary from '../src/components/ErrorBoundary';
-import { useFrameworkReady } from '../hooks/useFrameworkReady';
-import '../src/lib/i18n'
 import { useFrameworkReady } from '@/hooks/useFrameworkReady';
+import '../src/lib/i18n';
 
 export default function RootLayout() {
   useFrameworkReady();

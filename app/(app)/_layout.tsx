@@ -6,7 +6,7 @@ import { Tabs } from 'expo-router';
 import { Chrome as Home, Search, MessageCircle, User, Package, Truck, DollarSign, Shield } from 'lucide-react-native';
 
 export default function AppLayout() {
-  const { session, loading } = useAuth();
+  const { session, loading, profile } = useAuth();
 
   if (loading) {
     return (
