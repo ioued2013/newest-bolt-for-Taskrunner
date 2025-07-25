@@ -85,10 +85,35 @@ export default function CreateServiceScreen() {
   const uploadImage = async (uri: string): Promise<string | null> => {
     if (!user) return null;
 
+    // Add memory safety checks
+    const MAX_FILE_SIZE = 10 * 1024 * 1024; // 10MB limit
+    
     try {
       const response = await fetch(uri);
+      
+      // Check content length before processing
+      const contentLength = response.headers.get('content-length');
+      if (contentLength && parseInt(contentLength) > MAX_FILE_SIZE) {
+        throw new Error('File too large. Maximum size is 10MB.');
+      }
+      
       const blob = await response.blob();
+      
+      // Additional size check after blob creation
+      if (blob.size > MAX_FILE_SIZE) {
+        throw new Error('File too large. Maximum size is 10MB.');
+      }
+      
       const arrayBuffer = await blob.arrayBuffer();
+      
+      // Validate array buffer size
+      if (arrayBuffer.byteLength === 0) {
+        throw new Error('Invalid file: empty content');
+      }
+      
+      if (arrayBuffer.byteLength > MAX_FILE_SIZE) {
+        throw new Error('File too large after processing');
+      }
       
       const fileExt = uri.split('.').pop()?.toLowerCase() ?? 'jpeg';
       const fileName = `${user.id}-${Date.now()}.${fileExt}`;
@@ -112,8 +137,13 @@ export default function CreateServiceScreen() {
       return data.publicUrl;
     } catch (error) {
       console.error('Error uploading image:', error);
-      Alert.alert('Error', 'Failed to upload image');
+      Alert.alert('Error', error instanceof Error ? error.message : 'Failed to upload image');
       return null;
+    } finally {
+      // Force garbage collection hint
+      if (global.gc) {
+        global.gc();
+      }
     }
   };
 
